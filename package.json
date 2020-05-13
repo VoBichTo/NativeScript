@@ -13,6 +13,7 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "@angular/animations": "~8.2.0",
+    "@angular/cli": "^9.1.5",
     "@angular/common": "~8.2.0",
     "@angular/compiler": "~8.2.0",
     "@angular/core": "~8.2.0",
@@ -22,6 +23,7 @@
     "@angular/router": "~8.2.0",
     "@nativescript/theme": "~2.3.3",
     "nativescript-angular": "~8.21.0",
+    "nativescript-barcodescanner": "^3.4.2",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
     "tns-core-modules": "~6.5.0",
@@ -29,8 +31,11 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "~8.2.0",
+    "@nativescript/schematics": "^1.0.0",
     "@ngtools/webpack": "~8.2.0",
+    "@schematics/angular": "^9.1.5",
     "nativescript-dev-webpack": "~1.5.1",
+    "tslint": "^6.1.2",
     "typescript": "~3.5.3"
   },
   "gitHead": "2250137db8c1e0bd0eb543e8e4563cb71480c00d",

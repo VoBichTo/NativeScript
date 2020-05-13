@@ -2,9 +2,7 @@ import { Injectable } from "@angular/core";
 
 import { Item } from "./item";
 
-@Injectable({
-    providedIn: "root"
-})
+@Injectable()
 export class ItemService {
     private items = new Array<Item>(
         { id: 1, name: "Ter Stegen", role: "Goalkeeper" },
@@ -28,14 +26,14 @@ export class ItemService {
         { id: 22, name: "Aleix Vidal", role: "Midfielder" },
         { id: 23, name: "Umtiti", role: "Defender" },
         { id: 24, name: "Mathieu", role: "Defender" },
-        { id: 25, name: "Masip", role: "Goalkeeper" }
+        { id: 25, name: "Masip", role: "Goalkeeper" },
     );
 
-    getItems(): Array<Item> {
+    getItems(): Item[] {
         return this.items;
     }
 
     getItem(id: number): Item {
-        return this.items.filter((item) => item.id === id)[0];
+        return this.items.filter(item => item.id === id)[0];
     }
 }
